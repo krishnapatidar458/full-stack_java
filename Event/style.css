@@ -308,9 +308,20 @@ p {
     font-family: "Fira Sans", sans-serif;
     font-size: 24px;
     text-align: center;
-    /* margin-top: 100px; */
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     height: 80px;
+}
+
+.changing{
+    color: white;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    /* margin-bottom: 40px; */
+    height: 80px;
+}
+.text{
+    margin-top: 100px;
 }
 
 
@@ -323,6 +334,7 @@ p {
   min-height: 100vh;
   padding-top: 10vh;
   margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .design {
@@ -387,30 +399,28 @@ p {
 }
 
 .image{
-    margin-top:180px;
+    padding-top :50px;
     display: flex;
-    margin-left:60px;
+    padding-left:100px;
     align-items: center;
     justify-content: center;
+    height: 60vh;
+    margin-bottom: 20px;
 }
-
-.image img {
-    width:450px;
-    max-width: 100%; 
+.image img{
     border-radius: 10px;
-    /* mix-blend-mode:unset; */
+    text-align: center;
 }
-
-/* Changing Text Section */
-
-.image .changing-text {
+.changing{
     color: #fff; /* Set text color to white */
-    padding-left: 200px;
-    display:flexbox;
-    justify-content: center;
-    align-items:flex-start;
+    padding-right: 100px;
+    text-align: center;
+    height: auto;
 }
 
+.changing p{
+    font-size: 25px;
+}
 .changing-text #changingText {
     font-size: 24px;
     height: 40px;
@@ -425,4 +435,56 @@ p {
     .image .col-md-6 {
         width: 100%; /* Set each column to occupy full width on smaller screens */
     }
+}
+
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.form-group input[type="checkbox"] {
+    width: auto;
+}
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.form-group button:hover {
+    background-color: #218838;
+}
+.success-message {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    color: green;
 }

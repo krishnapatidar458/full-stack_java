@@ -36,3 +36,25 @@ window.onload = function() {
 };
 
 
+document.getElementById('registrationForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting the traditional way
+
+    // Form validation logic
+    const firstName = document.getElementById('firstName').value;
+    const lastName = document.getElementById('lastName').value;
+    const email = document.getElementById('email').value;
+    const mobileNo = document.getElementById('mobileNo').value;
+    const branch = document.getElementById('branch').value;
+    const college = document.getElementById('college').value;
+    const enrollmentNo = document.getElementById('enrollmentNo').value;
+    const whyAttend = document.getElementById('whyAttend').value;
+    const expectation = document.getElementById('expectation').value;
+
+    if (firstName && lastName && email && mobileNo && branch && college && enrollmentNo && whyAttend && expectation) {
+        // If all fields are filled, show success message
+        document.getElementById('successMessage').style.display = 'block';
+    } else {
+        alert('Please fill out all required fields.');
+    }
+});
+
