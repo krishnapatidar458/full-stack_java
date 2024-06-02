@@ -303,32 +303,16 @@ p {
     }
 }
 
-.banner {
-    position:relative;
-    width: 100%;
-    max-height: 380px; 
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.banner img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
-
 .changing-text {
     color: white;
     font-family: "Fira Sans", sans-serif;
     font-size: 24px;
     text-align: center;
-    margin-top: 100px; 
+    /* margin-top: 100px; */
     margin-bottom: 40px;
     height: 80px;
 }
+
 
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
 .design-section {
@@ -337,7 +321,8 @@ p {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding-top: 20vh;
+  padding-top: 10vh;
+  margin-bottom: 40px;
 }
 
 .design {
@@ -365,6 +350,9 @@ p {
   margin: 1rem;
   margin-bottom: 20px;
   border-radius: 6px;
+}
+.timeline-content p{
+    font-size: 15px;
 }
 
 .timeline-component {
@@ -403,6 +391,7 @@ p {
     display: flex;
     margin-left:60px;
     align-items: center;
+    justify-content: center;
 }
 
 .image img {
@@ -414,15 +403,17 @@ p {
 
 /* Changing Text Section */
 
-.changing-text {
+.image .changing-text {
     color: #fff; /* Set text color to white */
-    text-align: center;
-    /* align-items: top;  */
     padding-left: 200px;
+    display:flexbox;
+    justify-content: center;
+    align-items:flex-start;
 }
 
 .changing-text #changingText {
     font-size: 24px;
+    height: 40px;
 }
 
 /* Responsive Styles */

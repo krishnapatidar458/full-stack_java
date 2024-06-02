@@ -32,7 +32,7 @@ function changeText(elementId, textArray, delay) {
 }
 
 window.onload = function() {
-    changeText('changingText', ['FROM IDEA TO EMPIRE', 'PRESENTS'], 180);
+    changeText('changingText', ['FROM IDEA TO EMPIRE','JUNE 7, 2024', 'PRESENTS'], 180);
 };
 
 
