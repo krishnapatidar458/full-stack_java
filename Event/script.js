@@ -32,5 +32,7 @@ function changeText(elementId, textArray, delay) {
 }
 
 window.onload = function() {
-    changeText('changingText', ['Welcome to E-Cell RGPV', 'Innovation at its Best', 'Join Us Today!'], 150);
+    changeText('changingText', ['FROM IDEA TO EMPIRE', 'PRESENTS'], 180);
 };
+
+
