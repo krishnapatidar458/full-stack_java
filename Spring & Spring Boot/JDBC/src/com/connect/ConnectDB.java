@@ -1,9 +1,8 @@
 package com.connect;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+//import javax.swing.plaf.nimbus.State;
+import java.sql.*;
+//import java.util.Date;
 
 
 public class ConnectDB {
@@ -54,9 +53,28 @@ public class ConnectDB {
         }
     }
 
-    public void InsertData(Connection conn){
+    public void InsertData(Connection conn,String roll,int b_id, String date){
         try{
-
+            Statement st = conn.createStatement();
+            String query =String.format("insert into booktransections(rollno,book_id,return_date) values ('%s',%d,'%s');",roll,b_id,date);
+            st.executeUpdate(query);
+            System.out.println("data inserted");
+        }catch(Exception e){
+            System.out.println(e);
+        }
+    }
+    public void Retrive(Connection conn,String tbl_name){
+        try{
+            Statement st = conn.createStatement();
+            String Query = String.format("select * from %s ",tbl_name);
+            ResultSet rt = st.executeQuery(Query);
+            while(rt.next()){
+                System.out.print(rt.getString("book_transectionid")+" ");
+                System.out.print(rt.getString("rollno")+" -> ");
+                System.out.print(rt.getString("book_id")+" -> ");
+                System.out.print(rt.getString("issue_date")+" -> ");
+                System.out.println(rt.getString("return_date")+" ");
+            }
         }catch(Exception e){
             System.out.println(e);
         }
