@@ -4,6 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.util.Arrays;
+
 //@SpringBootApplication
 public class SpringFrameworkApplication {
 
@@ -18,6 +20,9 @@ public class SpringFrameworkApplication {
 		System.out.println(context.getBean("address"));
 		System.out.println(context.getBean("student"));
 		System.out.println(context.getBean("student2"));
+
+
+		Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
 
 	}
 
