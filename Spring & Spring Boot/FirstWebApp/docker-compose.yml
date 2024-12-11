@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15
+    container_name: Spring_database
+    environment:
+      POSTGRES_USER: krishna
+      POSTGRES_PASSWORD: java
+      POSTGRES_DB: API
+    volumes:
+      - spring_data:/var/lib/postgresql/data:rw
+    ports:
+      - "5432:5432"
+
+
+  spring-boot:
+    build: .
+    container_name: spring_container_api
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/API
+      SPRING_DATASOURCE_USERNAME: krishna
+      SPRING_DATASOURCE_PASSWORD: java
+    depends_on:
+      - db
+
+volumes:
+  spring_dev_data:
