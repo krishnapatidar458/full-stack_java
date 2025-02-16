@@ -1,0 +1,39 @@
+!SESSION 2025-02-02 12:17:14.704 -----------------------------------------------
+eclipse.buildId=4.34.0.20241128-0756
+java.version=21.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product JDBC/
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product JDBC/
+
+!ENTRY ch.qos.logback.classic 1 0 2025-02-02 12:17:16.026
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-02-02 12:17:36.676
+!MESSAGE Logback config file: /home/krishnapatidar458/Workspace/full-stack_java/Spring & Spring Boot/JDBC/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.0.20241001-1350.xml
+!SESSION 2025-02-02 12:19:57.698 -----------------------------------------------
+eclipse.buildId=4.34.0.20241128-0756
+java.version=21.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product -data JDBC/
+
+!ENTRY ch.qos.logback.classic 1 0 2025-02-02 12:19:59.448
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-02-02 12:20:00.155
+!MESSAGE Logback config file: /home/krishnapatidar458/Workspace/full-stack_java/Spring & Spring Boot/JDBC/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.0.20241001-1350.xml
+!SESSION 2025-02-02 12:23:06.315 -----------------------------------------------
+eclipse.buildId=4.34.0.20241128-0756
+java.version=21.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product . JDBC/
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product . JDBC/
+
+!ENTRY ch.qos.logback.classic 1 0 2025-02-02 12:23:07.597
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-02-02 12:23:11.555
+!MESSAGE Logback config file: /home/krishnapatidar458/Workspace/full-stack_java/Spring & Spring Boot/JDBC/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.0.20241001-1350.xml
